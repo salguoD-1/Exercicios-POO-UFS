@@ -2,9 +2,12 @@ package application;
 
 import entities.Account;
 
+import java.util.Locale;
+
 public class AppAccount {
     public static void main(String[] args) {
         Account account = new Account("Douglas", "12356345", 11500.49, 940.00);
+        Locale.setDefault(Locale.US);
 
         System.out.println("Client name: " + account.getClientName());
         System.out.println("Client account number: " + account.getClientAccountNumber());
